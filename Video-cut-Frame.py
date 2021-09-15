@@ -25,7 +25,7 @@
 
 import cv2
 
-vidcap = cv2.VideoCapture('/Users/jwoh/Desktop/python-data-Manage/airport.mp4')
+vidcap = cv2.VideoCapture('/Users/jwoh/Desktop/python-data-Manage/airport-new.mp4')
 success, image = vidcap.read()
 
 count = 1

@@ -5,13 +5,8 @@ import natsort
 # 맥의 경우 ls-a 로 '.DS_Store' 파일 삭제 하고 사용
 
 # JPG파일 리스트와 txt파일 리스트를 만든다.
-jpgfiles_list = os.listdir('/Users/jwoh/WorkSpace/Yolo_mark/x64/Release/data/jpg')
-txtfiles_list = os.listdir('/Users/jwoh/WorkSpace/Yolo_mark/x64/Release/data/txt')
-
-#print(type(jpgfiles_list[0]))
-
-# for i in jpgfiles:
-#     print(i)
+jpgfiles_list = os.listdir('/Users/jwoh/Desktop/FileMatching-demo/jpg')
+txtfiles_list = os.listdir('/Users/jwoh/Desktop/FileMatching-demo/txt')
 
 withOutCommaJPG="".join(jpgfiles_list)
 newJPG = withOutCommaJPG.split('.jpg')
@@ -24,13 +19,12 @@ txtSorted_list = natsort.natsorted(newTXT)
 print(len(txtSorted_list))
 cnt = 0
 
-for item1 in txtSorted_list:
-    if(item1 in jpgSorted_list):
-            # cnt += 1
+for item1 in jpgSorted_list:
+    if(item1 in txtSorted_list):
         pass                
     else:
         print("Not in List",item1)
-            # cnt += 1
+
 
 # while cnt < len(txtSorted_list):
 #     for item1 in txtSorted_list:
