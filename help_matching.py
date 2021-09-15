@@ -1,3 +1,4 @@
+# yolo 이미지 박스 칠 때, txt파일 크기가 0인 것을 삭제하는 프로그램 
 import os
 
 path = './help_data'

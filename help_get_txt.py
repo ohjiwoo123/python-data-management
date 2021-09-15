@@ -1,3 +1,4 @@
+# yolo 박스 친 txt파일을 읽어서, 앞에 클래스 숫자를 count하고, 박스 개수 및 이미지 개수를 count하는 코드
 import os
 
 path = './help_data'
